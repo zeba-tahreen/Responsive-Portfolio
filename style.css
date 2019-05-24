@@ -1,0 +1,79 @@
+
+/*why is this used for*/
+
+*        
+    {box-sizing:box-border;
+}
+
+/* I have tried to use the scroll attachment for the background to move up but I see the container moving down and not up  */
+body { 
+    margin:25px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/spiration-light.png);
+    background-attachment: scroll;
+}
+/* can I make my header with curve edges */
+header {
+    background: rgb(89, 43, 133);
+    height: 70px;
+    border-style: ridge;
+    border-radius: 5%;
+}
+a {
+    color: beige;
+    text-decoration: none;
+}
+
+/* In between h1 and h2 there is a image, how can write in-line with the picture */
+  h1,h2 {
+      color:rgb(89, 43, 133);
+  }
+
+  /* can I seprate logo and othere name using ul,li format or I have to change it to div to get logo on right*/
+ #nav {
+     float: right;
+ }
+
+ li {
+     display: inline-block;
+     margin: 15px;
+     list-style-type: none;
+ }
+
+/* The containe dosnt cover the whole area */
+ #main-content {
+    padding-top: 10px;
+    min-height: calc(100vh - 70px);
+  }
+  
+  .content {
+    float: left;
+    width: 100%;
+    max-width: 960px;
+    padding: 64px 32px;
+    margin:24px 0px ;
+    background: rgb(255, 251, 251);
+    border: 1px solid black;
+  }
+
+  /* footer borders dosnt work with respect to header */
+ footer{
+     position:fixed;
+     clear: both;
+     text-align: center;
+     background:rgb(89, 43, 133);
+     color: rgba(253, 253, 252, 0.801);
+     width:100%;
+     bottom: 10px;
+     right:-25px;
+     left:25px;
+     font-size: 12px;
+     padding:30px 0;
+     margin:0;
+
+}
+/* how do I change color of only the link
+
+.container, a {   color:red;
+  }
+  */
