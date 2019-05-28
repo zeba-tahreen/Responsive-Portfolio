@@ -23,37 +23,71 @@
     
     </div>
     </header>
-    <div id="main-content" class= "container">
-        <section class="content">
-            <h1>Portfolio</h1>
+    <body>
 
-            <div class="work">
-                img1
-                
-                    <h3>Word Guess</h3>
-                </div>
+        
+<h2 style="text-align:center">Slideshow Gallery</h2>
 
-            <div class="work">
-                img2
-                    <h3>rpg game</h3>
-                </div>
-            <div class="work">
-                img3
-                        <h3>trivia game/h3>
-                    </div>
+<div class="p-container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="images/rpimage1.png" style="width:100%">
+  </div>
 
-            <div class="work">
-                img4
-                            <h3>rutgers</h3>
-                        </div>
-                        
-            <div class="work">
-                img5
-                    <h3>Word Guess</h3>
-                </div>
-                </section>
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="images/rpimage2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="images/rpimage3.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="images/rpimage4.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="images/rpimage5.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="images/rpimage6.png" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="p-row">
+    <div class="column">
+      <img class="demo cursor" src="images/rpimage1.png" style="width:100%" onclick="currentSlide(1)" alt="The Rutgers Bootcamp">
     </div>
-
+    <div class="p-column">
+      <img class="demo cursor" src="images/rpimage2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Html">
+    </div>
+    <div class="p-column">
+      <img class="demo cursor" src="images/rpimage3.jpg" style="width:100%" onclick="currentSlide(3)" alt="CSS">
+    </div>
+    <div class="p-column">
+      <img class="demo cursor" src="images/rpimage4.png" style="width:100%" onclick="currentSlide(4)" alt="GitHub">
+    </div>
+    <div class="p-column">
+      <img class="demo cursor" src="images/rpimage5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Bootstrap">
+    </div>    
+    <div class="p-column">
+      <img class="demo cursor" src="images/rpimage6.png" style="width:100%" onclick="currentSlide(6)" alt="ChromeDevTools">
+    </div>
+  </div>
+</div>
+        
 
     <footer>
         <div class="container">
@@ -62,6 +96,36 @@
 
     </footer>
 
+    <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
 
 </body>
 </html>

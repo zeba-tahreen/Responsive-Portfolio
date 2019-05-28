@@ -9,6 +9,7 @@ body {
     line-height: 34px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgba(8, 8, 8, 0.801);
+    background-image: url(https://wallpaperbro.com/img/197149.jpg);
 }
 
 .container {
@@ -44,10 +45,10 @@ h2, h3 {
 
 /*header*/
 #maintop {
-    background: rgb(89, 43, 133);
+    background: #302718;
     margin: 0 0 30px;
     z-index: 99;
-    color:rgba(253, 253, 252, 0.801);
+    color:whitesmoke;
     overflow: auto;
     border-bottom: 2px solid black;
     position: fixed;
@@ -58,15 +59,16 @@ h2, h3 {
 #logo {
     width: 250px;
     height: 90px;
-    background: rgba(253, 253, 252, 0.801);
+/*    background: rgba(245, 245, 245, 0.726);*/
     float: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     line-height: 90px;
-    color:rgb(89, 43, 133);
+    color: rgb(113, 3, 247);
     font-weight: 700;
     font-size: 30px;
     text-decoration: none;
+    background-radius: 
 }
 nav {
     float: right;
@@ -74,11 +76,11 @@ nav {
 }
 
 nav a {
-    color: rgba(253, 253, 252, 0.801);
+    color: whitesmoke;
     text-decoration: none;
     margin-left: 15px;
     display: inline-block;
-    border-left: 1px solid red;
+    border-left: 1px solid #699E3C;
     padding-left: 15px;
     line-height: 18px;
 
@@ -88,43 +90,38 @@ nav a {
 
 .main-content {
     padding-top: 130px;
+    width: 100%;
+
 }
 
 .content {
-    background: grey;
+    background:rgba(97, 5, 209, 0.61) ;
     padding: 30px;
     margin: 0 0 40px 0;
     width: 100%;
     max-width: 650px;
     float: left;
-    border: 1px solid green;
+    border: 1px solid black;
+    color: whitesmoke;
+    border-radius: 1%;
 
 }
 
+/*Start for Side bar Style*/
 
-
-/*
-.auth-image {
-    width:200px;
-    height:auto;
-    margin-top: 10px;
-    float: left;
-    margin-right:25px;
-
-*/
 
 .sidebar {
-    background: beige;
+    background: rgba(97, 5, 209, 0.61);
     padding: 30px;
     width: 100%;
     max-width: 270px;
     float: right;
-    border: 1px solid pink;
+    border: 1px solid black;
+    border-radius: 1%;
     margin-bottom: 20px;
 }
 
 h3, .sidebar, h2 {
-    border-bottom: 2px solid rgb(163, 6, 98); 
     padding-bottom: 20px;
     margin-bottom: 15px;
     line-height: 20px;
@@ -141,13 +138,18 @@ h3, .sidebar, h2 {
     margin-right: o;
 }
 
+
+
+
+
+/*Start for footer style*/
+
 footer { 
-    background: black;
-    color: beige;
+    background: #302718;
+    color:#699E3C;
     padding: 30px 0;
     clear: both;
-    border-top: 8px solid red;
-    color: blue;
+    border-top: 8px solid rgba(97, 5, 209, 0.61);
     font-size: 12px;
     text-align: center;
     
@@ -185,6 +187,8 @@ footer {
     font-weight: 300;
 }
 
+/*Start for contact page style*/
+
 /*contact page*/
 
 #contact-form ul {
@@ -208,15 +212,136 @@ textarea{
 }
 
 input[type=submit] {
-    background: grey;
+    background: #302718 ;
     border: 0 none;
-    color: brown;
+    color: whitesmoke;
     font-size: 18px;
     padding: 10px 30px;
 }
 
 
 
+/* start for home page columns style*/
+
+
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column  {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column  {
+      width: 100%;
+    }
+  }
+
+  /*start of portfolio style*/
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .p-container {
+    position: relative;
+    margin: 3%;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.664);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .p-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .p-column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
 
 
 
